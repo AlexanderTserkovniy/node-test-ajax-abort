@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node test cancel</title>
+</head>
+<body>
+  <h1>Check the console</h1>
+  <script>
+    var xhr = new XMLHttpRequest(),
+      method = "GET",
+      url = "http://localhost:8999";
+    xhr.open(method, url, true);
+
+    xhr.send();
+
+    xhr.abort();
+  </script>
+</body>
+</html>
